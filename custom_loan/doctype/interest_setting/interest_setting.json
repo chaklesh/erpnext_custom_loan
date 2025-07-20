@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:setting_name",
+ "creation": "2025-01-19 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "setting_details",
+  "setting_name",
+  "interest_type",
+  "column_break_3",
+  "default_rate",
+  "is_active",
+  "interest_calculation_settings",
+  "calculation_method",
+  "payment_frequency",
+  "column_break_8",
+  "grace_period_days",
+  "penalty_rate",
+  "rates_by_amount",
+  "amount_slabs",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "setting_details",
+   "fieldtype": "Section Break",
+   "label": "Interest Setting Details"
+  },
+  {
+   "fieldname": "setting_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Setting Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Flat Rate",
+   "fieldname": "interest_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Interest Type",
+   "options": "Flat Rate\nEMI\nReducing Balance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_rate",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Default Rate (% per month)",
+   "reqd": 1
+  },
+  {
+   "default": 1,
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "interest_calculation_settings",
+   "fieldtype": "Section Break",
+   "label": "Interest Calculation Settings"
+  },
+  {
+   "default": "Monthly",
+   "fieldname": "calculation_method",
+   "fieldtype": "Select",
+   "label": "Calculation Method",
+   "options": "Daily\nWeekly\nMonthly"
+  },
+  {
+   "default": "Monthly",
+   "fieldname": "payment_frequency",
+   "fieldtype": "Select",
+   "label": "Payment Frequency",
+   "options": "Daily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "grace_period_days",
+   "fieldtype": "Int",
+   "label": "Grace Period (Days)"
+  },
+  {
+   "default": "0",
+   "fieldname": "penalty_rate",
+   "fieldtype": "Percent",
+   "label": "Penalty Rate (% per month)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "rates_by_amount",
+   "fieldtype": "Section Break",
+   "label": "Interest Rates by Loan Amount"
+  },
+  {
+   "fieldname": "amount_slabs",
+   "fieldtype": "Table",
+   "label": "Amount Slabs",
+   "options": "Interest Rate Slab"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-19 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Custom Loan",
+ "name": "Interest Setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Loan Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

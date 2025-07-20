@@ -1,0 +1,269 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-19 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "application_details",
+  "customer",
+  "customer_name",
+  "mobile_number",
+  "column_break_4",
+  "application_date",
+  "status",
+  "loan_details",
+  "loan_type",
+  "requested_amount",
+  "interest_setting",
+  "column_break_10",
+  "interest_rate",
+  "tenure_months",
+  "purpose",
+  "assessment",
+  "monthly_income",
+  "existing_loans",
+  "credit_score",
+  "column_break_16",
+  "collateral_details",
+  "guarantor_name",
+  "guarantor_mobile",
+  "approval_section",
+  "approved_amount",
+  "approved_rate",
+  "column_break_21",
+  "approved_by",
+  "approval_date",
+  "rejection_reason",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "LOAN-APP-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "LOAN-APP-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_details",
+   "fieldtype": "Section Break",
+   "label": "Application Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Loan Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.mobile_number",
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Date",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nUnder Review\nApproved\nRejected\nDisbursed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "loan_details",
+   "fieldtype": "Section Break",
+   "label": "Loan Details"
+  },
+  {
+   "default": "Flat Rate",
+   "fieldname": "loan_type",
+   "fieldtype": "Select",
+   "label": "Loan Type",
+   "options": "Flat Rate\nEMI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requested_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Requested Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interest_setting",
+   "fieldtype": "Link",
+   "label": "Interest Setting",
+   "options": "Interest Setting"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interest_rate",
+   "fieldtype": "Percent",
+   "label": "Interest Rate (% per month)"
+  },
+  {
+   "fieldname": "tenure_months",
+   "fieldtype": "Int",
+   "label": "Tenure (Months)"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Text",
+   "label": "Purpose of Loan"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "assessment",
+   "fieldtype": "Section Break",
+   "label": "Assessment Details"
+  },
+  {
+   "fieldname": "monthly_income",
+   "fieldtype": "Currency",
+   "label": "Monthly Income"
+  },
+  {
+   "fieldname": "existing_loans",
+   "fieldtype": "Text",
+   "label": "Existing Loans/Debts"
+  },
+  {
+   "default": "0",
+   "fieldname": "credit_score",
+   "fieldtype": "Int",
+   "label": "Credit Score (1-10)"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "collateral_details",
+   "fieldtype": "Text",
+   "label": "Collateral Details"
+  },
+  {
+   "fieldname": "guarantor_name",
+   "fieldtype": "Data",
+   "label": "Guarantor Name"
+  },
+  {
+   "fieldname": "guarantor_mobile",
+   "fieldtype": "Data",
+   "label": "Guarantor Mobile",
+   "options": "Phone"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.status=='Approved'",
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval Details"
+  },
+  {
+   "fieldname": "approved_amount",
+   "fieldtype": "Currency",
+   "label": "Approved Amount"
+  },
+  {
+   "fieldname": "approved_rate",
+   "fieldtype": "Percent",
+   "label": "Approved Rate (% per month)"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Datetime",
+   "label": "Approval Date"
+  },
+  {
+   "depends_on": "eval:doc.status=='Rejected'",
+   "fieldname": "rejection_reason",
+   "fieldtype": "Text",
+   "label": "Rejection Reason"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-19 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Custom Loan",
+ "name": "Loan Application",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Loan Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,10 @@
+include *.md
+include *.txt
+include *.json
+recursive-include custom_loan *.html
+recursive-include custom_loan *.py
+recursive-include custom_loan *.json
+recursive-include custom_loan *.js
+recursive-include custom_loan *.css
+recursive-include custom_loan *.md
+recursive-include config *.py

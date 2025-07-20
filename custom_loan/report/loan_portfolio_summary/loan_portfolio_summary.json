@@ -1,0 +1,52 @@
+{
+ "add_total_row": 1,
+ "creation": "2025-01-19 12:00:00.000000",
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Loan Customer"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nClosed\nOverdue\nWritten Off"
+  },
+  {
+   "fieldname": "loan_type",
+   "fieldtype": "Select",
+   "label": "Loan Type",
+   "options": "\nFlat Rate\nEMI"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  }
+ ],
+ "is_standard": "Yes",
+ "modified": "2025-01-19 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Custom Loan",
+ "name": "Loan Portfolio Summary",
+ "owner": "Administrator",
+ "ref_doctype": "Loan",
+ "report_name": "Loan Portfolio Summary",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Loan Manager"
+  }
+ ]
+}
