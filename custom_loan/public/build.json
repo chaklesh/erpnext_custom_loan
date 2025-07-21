@@ -1,1 +1,4 @@
-{}
+{
+	"css": ["public/css/custom_loan.css"],
+	"js": []
+}
