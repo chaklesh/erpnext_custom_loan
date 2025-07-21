@@ -1,4 +1,4 @@
-from . import __version__ as app_version
+__version__ = '0.1.0'
 
 app_name = "custom_loan"
 app_title = "NAYAG EDGE Loan Management"
@@ -6,7 +6,7 @@ app_publisher = "NAYAG"
 app_description = "Custom loan management system for local finance business with flat interest and EMI calculations - NAYAG EDGE"
 app_email = "chaklesh@nayag.com"
 app_license = "MIT"
-app_version = app_version
+app_version = __version__
 
 # Includes in <head>
 # ------------------
