@@ -12,8 +12,8 @@ app_version = app_version
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/custom_loan/css/custom_loan.css"
-# app_include_js = "/assets/custom_loan/js/custom_loan.js"
+app_include_css = "/assets/custom_loan/css/custom_loan.css"
+app_include_js = "/assets/custom_loan/js/custom_loan.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/custom_loan/css/custom_loan.css"

@@ -1,0 +1,55 @@
+/* NAYAG EDGE - Custom Loan Management Styles */
+
+.loan-dashboard {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.loan-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.loan-status-active {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.loan-status-overdue {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.loan-status-closed {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.loan-amount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.customer-info {
+    background: #e9f4ff;
+    border-left: 4px solid #007bff;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.payment-history {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.nayag-branding {
+    color: #007bff;
+    font-weight: bold;
+}
