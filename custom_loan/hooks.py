@@ -65,13 +65,13 @@ app_include_js = "/assets/custom_loan/js/custom_loan.js"
 # ------------
 
 # before_install = "custom_loan.install.before_install"
-# after_install = "custom_loan.install.after_install"
+after_install = "custom_loan.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "custom_loan.uninstall.before_uninstall"
-# after_uninstall = "custom_loan.uninstall.after_uninstall"
+before_uninstall = "custom_loan.install.before_uninstall"
+after_uninstall = "custom_loan.install.after_uninstall"
 
 # Integration Setup
 # ------------------

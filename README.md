@@ -1,6 +1,6 @@
-# NAYAG EDGE - Custom Loan Management System for ERPNext
+# NAYAG EDGE - Custom Loan Management for ERPNext 15
 
-A comprehensive loan management application built for ERPNext using the Frappe framework by **NAYAG**, specifically designed for local finance businesses that handle flat interest loans, EMI-based loans, and customer credit management.
+✅ **ERPNext 15 Compatible** - A comprehensive loan management system designed for local finance businesses, fully compatible with ERPNext 15 and the latest Frappe framework.
 
 **Developed by:** Chaklesh Yadav - NAYAG  
 **Product:** NAYAG EDGE (edge.nayag.com)  

@@ -1,0 +1,18 @@
+[
+ {
+  "creation": "2025-01-21 12:00:00.000000",
+  "desk_access": 1,
+  "disabled": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2025-01-21 12:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Loan Manager",
+  "owner": "Administrator",
+  "restrict_to_domain": null,
+  "role_name": "Loan Manager",
+  "search_bar": 1,
+  "two_factor_auth": 0
+ }
+]

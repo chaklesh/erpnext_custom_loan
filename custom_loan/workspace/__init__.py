@@ -1,0 +1,1 @@
+# Workspace module for NAYAG EDGE Loan Management
